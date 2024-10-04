@@ -133,13 +133,24 @@ describe("float", () => {
 )
 
 //array
-describe.only("arrays", () => {
-    it.only("should have 1", () => {
+describe("arrays", () => {
+    it("should have 1", () => {
         expect([1, 2, 3]).toContain(1)
     }
     )
     it("should not have 4", () => {
         expect([1, 2, 3]).not.toContain(4)
+    }
+    )
+}
+)
+
+//throw error
+describe("errors", () => {
+    it("should throw an error", () => {
+        expect(() => {
+            throw new Error("error")
+        }).toThrow()
     }
     )
 }
