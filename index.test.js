@@ -39,11 +39,59 @@ describe("Division function", () => {
     it("2 and -2 should return -1", () => {
         expect(divide(2, -2)).toBe(-1)
     })
+    it("10 and 0 should return Infinity", () => {
+        expect(divide(10, 0)).toBe(Infinity)
+    })
+
     it("-2 and -2 should return 1", () => {
         expect(divide(-2, -2)).toBe(1)
     })
 }
 )
+
+
+//test for objects 
+
+describe("objects", () => {
+    it("two objects that are equal", () => {
+        const obj = { a: 1, b: 2 };
+        expect(obj).toEqual({ a: 1, b: 2 });
+    }
+    )
+}
+)
+
+describe("truthiness", () => {
+    it("null", () => {
+        const n = null;
+        expect(n).toBeNull();
+        expect(n).toBeDefined();
+        expect(n).not.toBeUndefined();
+        expect(n).toBeFalsy();
+    }
+    )
+    it("zero", () => {
+        const z = 0;
+        expect(z).not.toBeNull();
+        expect(z).toBeDefined();
+        expect(z).not.toBeUndefined();
+        expect(z).toBeFalsy();
+    }
+    )
+}
+)
+//toBeNull() matches only null
+//toBeUndefined() matches only undefined
+//toBeDefined() is the opposite of toBeUndefined()
+//toBeTruthy() matches anything that an if statement treats as true
+//toBeFalsy() matches anything that an if statement treats as false
+
+// tobedefined means it'll will be defined in future but now it's null right? Yes or No ? 
+//ans: No, toBeDefined means it is defined and not null or undefined.
+
+
+
+
 
 //why to use describe?
 // The describe function is used to group test cases together. It is a way to organize your tests.
