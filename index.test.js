@@ -107,6 +107,31 @@ describe("numbers", () => {
     )
 }
 )
+
+
+
+//string
+describe("strings", () => {
+    it("should contain 'world'", () => {
+        expect("hello world").toMatch(/world/)
+    }
+    )
+    it("should not contain 'world'", () => {
+        expect("hello").not.toMatch(/world/)
+    }
+    )
+}
+)
+
+//float
+describe("float", () => {
+    it("should be 0.1", () => {
+        expect(0.1 + 0.2).toBeCloseTo(0.3)
+    }
+    )
+}
+)
+
 //toBeNull() matches only null
 //toBeUndefined() matches only undefined
 //toBeDefined() is the opposite of toBeUndefined()
