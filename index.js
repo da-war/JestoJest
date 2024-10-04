@@ -1,12 +1,14 @@
-const multiply = (a,b) => {
-    return a * b;
+const fetchData=(shouldFail=false)=>{
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            if(shouldFail){
+                reject("error")
+            }else{
+                resolve("Peanut Butter")
+            }
+        },100)
+    })
 }
 
 
-const divide = (a, b) => {
-    return a / b;
-}
-
-
-
-module.exports = { multiply, divide }
+module.exports = fetchData;
