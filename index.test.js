@@ -132,6 +132,19 @@ describe("float", () => {
 }
 )
 
+//array
+describe.only("arrays", () => {
+    it.only("should have 1", () => {
+        expect([1, 2, 3]).toContain(1)
+    }
+    )
+    it("should not have 4", () => {
+        expect([1, 2, 3]).not.toContain(4)
+    }
+    )
+}
+)
+
 //toBeNull() matches only null
 //toBeUndefined() matches only undefined
 //toBeDefined() is the opposite of toBeUndefined()
