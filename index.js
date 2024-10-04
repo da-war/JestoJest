@@ -2,4 +2,11 @@ const multiply = (a,b) => {
     return a * b;
 }
 
-module.exports = multiply;
+
+const divide = (a, b) => {
+    return a / b;
+}
+
+
+
+module.exports = { multiply, divide }
