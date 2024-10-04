@@ -80,6 +80,33 @@ describe("truthiness", () => {
     )
 }
 )
+
+
+describe("numbers", () => {
+    value = 3 + 3
+    it("should be greater than 5", () => {
+        expect(value).toBeGreaterThan(5)
+    }
+    )
+    it("should be greater than or equal to 6", () => {
+        expect(value).toBeGreaterThanOrEqual(6)
+    }
+    )
+    it("should be less than 7", () => {
+        expect(value).toBeLessThan(7)
+    }
+    )
+    it("should be less than or equal to 6", () => {
+        expect(value).toBeLessThanOrEqual(6)
+    }
+    )
+    it("should be 6", () => {
+        expect(value).toBe(6)
+    }
+        
+    )
+}
+)
 //toBeNull() matches only null
 //toBeUndefined() matches only undefined
 //toBeDefined() is the opposite of toBeUndefined()
